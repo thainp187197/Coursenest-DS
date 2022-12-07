@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  authentication.api:
+    image: ${DOCKER_REGISTRY-}authenticationapi
+    build:
+      context: .
+      dockerfile: Services/Authentication/Authentication.API/Dockerfile
+
+
+  identity.api:
+    image: ${DOCKER_REGISTRY-}identityapi
+    build:
+      context: .
+      dockerfile: Services/Identity/Identity.API/Dockerfile
+
+
+  library.api:
+    image: ${DOCKER_REGISTRY-}libraryapi
+    build:
+      context: .
+      dockerfile: Services/Library/Library.API/Dockerfile
+
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: Services/Payment/Payment.API/Dockerfile
+
+
+  userdata.api:
+    image: ${DOCKER_REGISTRY-}userdataapi
+    build:
+      context: .
+      dockerfile: Services/UserData/UserData.API/Dockerfile
+

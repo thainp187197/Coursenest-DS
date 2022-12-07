@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "Services\Authentication\Authentication.API\Authentication.API.csproj", "{D9E162B9-4A74-4186-825A-A70412B9F705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.API", "Services\Authentication\Authentication.API\Authentication.API.csproj", "{D9E162B9-4A74-4186-825A-A70412B9F705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "Services\Identity\Identity.API\Identity.API.csproj", "{E862CAB7-DA44-45F0-9B0E-316313FB9AD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "Services\Identity\Identity.API\Identity.API.csproj", "{E862CAB7-DA44-45F0-9B0E-316313FB9AD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.API", "Services\Library\Library.API\Library.API.csproj", "{5BA61A30-A17C-4B78-9A0B-41686817982D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.API", "Services\Library\Library.API\Library.API.csproj", "{5BA61A30-A17C-4B78-9A0B-41686817982D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.API", "Services\Payment\Payment.API\Payment.API.csproj", "{CC8A7E09-9F2C-42EC-AACD-E6A26EED9730}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.API", "Services\Payment\Payment.API\Payment.API.csproj", "{CC8A7E09-9F2C-42EC-AACD-E6A26EED9730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserData.API", "Services\UserData\UserData.API\UserData.API.csproj", "{7B1FBB9F-0FDD-4CD6-9E56-35DC57947163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserData.API", "Services\UserData\UserData.API\UserData.API.csproj", "{7B1FBB9F-0FDD-4CD6-9E56-35DC57947163}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6B3EDF54-0B76-41AF-AB29-5185FACFBE8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICommonLibrary", "Services\APICommonLibrary\APICommonLibrary.csproj", "{9DE3F006-2B9C-4DD4-9A26-A608DF5CAED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{7B1FBB9F-0FDD-4CD6-9E56-35DC57947163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B1FBB9F-0FDD-4CD6-9E56-35DC57947163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B1FBB9F-0FDD-4CD6-9E56-35DC57947163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3EDF54-0B76-41AF-AB29-5185FACFBE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3EDF54-0B76-41AF-AB29-5185FACFBE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3EDF54-0B76-41AF-AB29-5185FACFBE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3EDF54-0B76-41AF-AB29-5185FACFBE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE3F006-2B9C-4DD4-9A26-A608DF5CAED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE3F006-2B9C-4DD4-9A26-A608DF5CAED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE3F006-2B9C-4DD4-9A26-A608DF5CAED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE3F006-2B9C-4DD4-9A26-A608DF5CAED9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
