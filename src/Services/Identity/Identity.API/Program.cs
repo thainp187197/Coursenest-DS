@@ -1,4 +1,5 @@
 using APICommonLibrary;
+using Identity.API.Contexts;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,7 +27,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.Services.EnsureCreated<DataContext>();
+if (app.Configuration["EnsureOverwrite"] == "True")
+{
+    app.Services.EnsureOverwrite<DataContext>();
+}
+else if (app.Configuration["EnsureCreated"] == "True")
+{
+    app.Services.EnsureCreated<DataContext>();
+}
 
 app.UseAuthorization();
 
