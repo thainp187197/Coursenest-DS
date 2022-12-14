@@ -3,7 +3,7 @@
 namespace Identity.API.Models;
 
 [PrimaryKey(nameof(UserId), nameof(TopicId))]
-public class InterestedTopic
+public class FollowedTopic
 {
     // Relationship
     public int UserId { get; set; }

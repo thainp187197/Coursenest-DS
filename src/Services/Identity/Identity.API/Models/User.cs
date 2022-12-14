@@ -1,5 +1,8 @@
-﻿namespace Identity.API.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
+namespace Identity.API.Models;
+
+[Index(nameof(Email), IsUnique = true)]
 public class User
 {
     public User(string email, string fullName)
@@ -17,14 +20,17 @@ public class User
     public Gender? Gender { get; set; }
     public DateTime? DateOfBirth { get; set; }
     public string? Location { get; set; }
+    public DateTime Created { get; set; }
+    public DateTime LastModified { get; set; }
 
     // Relationship
-    public int? AvatarImageId { get; set; }
-    public Image? AvatarImage { get; set; } = null!;
+    public Avatar? Avatar { get; set; } = null!;
 
     public List<Experience> Experiences { get; set; } = new();
 
     public List<InterestedTopic> InterestedTopics { get; set; } = new();
+
+    public List<FollowedTopic> FollowedTopics { get; set; } = new();
 }
 
 public enum Gender
